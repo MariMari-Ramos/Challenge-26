@@ -99,3 +99,69 @@
             <input type="text" id="assunto" name="assunto" required minlength="3" maxlength="100" />
             <span class="form-erro" id="erro-assunto"></span>
           </div>
+
+          <!-- Campo mensagem -->
+          <div class="form-grupo">
+            <label for="mensagem" data-i18n="contato.labelMensagem"></label>
+            <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" maxlength="500"></textarea>
+            <span class="form-erro" id="erro-mensagem"></span>
+          </div>
+
+          <button type="submit" class="btn btn-principal" data-i18n="contato.botaoEnviar"></button>
+
+          <!-- Mensagem de sucesso -->
+          <p class="form-sucesso" id="form-sucesso" data-i18n="contato.sucesso"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer" data-page="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 data-i18n="footer.sobreTitulo"></h3>
+          <p data-i18n="footer.sobreTexto"></p>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.linksTitulo"></h3>
+          <ul>
+            <li><a href="../index.html" data-i18n="footer.home"></a></li>
+            <li><a href="sobre.html" data-i18n="footer.sobre"></a></li>
+            <li><a href="faq.html" data-i18n="footer.faq"></a></li>
+            <li><a href="contato.html" data-i18n="footer.contato"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.contatoTitulo"></h3>
+          <p data-i18n="footer.email"></p>
+          <p data-i18n="footer.telefone"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.direitos"></p>
+      </div>
+    </footer>
+
+    <!-- Modal de configuracoes -->
+    <section class="modal" id="modal-config" data-page="config">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2 data-i18n="config.titulo"></h2>
+        <div class="config-item">
+          <label data-i18n="config.linguagem"></label>
+          <select id="lang-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <div class="config-item">
+          <label data-i18n="config.tema"></label>
+          <select>
+            <option>Escuro</option>
+            <option>Claro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
