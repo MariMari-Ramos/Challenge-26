@@ -1,0 +1,89 @@
+/* Pagina Contato */
+.contato {
+    margin-left: 80px;
+    padding: var(--spacing-lg);
+    max-width: 700px;
+    min-height: calc(100vh - 80px);
+}
+
+.contato h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.contato-intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Formulario */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    background-color: var(--cinza);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+}
+
+/* Cada campo do formulario */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-grupo label {
+    font-size: 16px;
+    color: var(--branco);
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    background-color: var(--cinza2);
+    color: var(--branco);
+    border: 1px solid var(--cinza2);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--azul3);
+}
+
+.form-grupo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Mensagens de erro */
+.form-erro {
+    color: #ff6b6b;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+/* Mensagem de sucesso (aparece quando o form e enviado) */
+.form-sucesso {
+    color: var(--azul3);
+    font-size: 16px;
+    text-align: center;
+    display: none;
+}
+
+.form-sucesso.ativo {
+    display: block;
+}
+
+.contato-form .btn {
+    align-self: flex-start;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .contato-form {
+        padding: var(--spacing-md);
+    }
+}
