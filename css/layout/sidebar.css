@@ -41,8 +41,14 @@
     height: 30px;
 }
 
+
 .barra_lateral span{
     display: none;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: translateX(-10px);
 }
 
 .barra_lateral:hover {
@@ -51,4 +57,7 @@
 
 .barra_lateral:hover span {
     display: inline;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }

@@ -1,0 +1,11 @@
+.botao_topo {
+    height: 80px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 var(--spacing-lg);
+
+    margin-left: 80px;
+}
