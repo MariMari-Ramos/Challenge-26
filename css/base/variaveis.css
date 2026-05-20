@@ -1,0 +1,20 @@
+:root{
+    /*Cores*/
+    --azul1: #1193a0;
+    --azul2: #2db7ba;
+    --azul3: #6bdcd6;
+    --branco: #ffffff;
+    --cinza: #2d2d2d;
+
+    /*Tipografia principal*/
+    --fonte-principal: 'Arial', sans-serif;
+
+    /*Espaçamento*/
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+
+    /*Bordas*/
+    --border-radius: 8px;
+}

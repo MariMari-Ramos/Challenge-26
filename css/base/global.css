@@ -1,0 +1,16 @@
+body {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    background: linear-gradient(to right, var(--azul1), var(--azul2));
+}
+
+/* Padrão dos titulos*/
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/*Padrão dos botãoes*/
+button {
+    cursor: pointer;
+    border: none;
+}
