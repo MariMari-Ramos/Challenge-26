@@ -3,3 +3,6 @@
 @import url('./base/global.css');
 @import url('./base/reset.css');
 @import url('./base/tipografia.css');
+
+/*Layout*/
+@import url('./layout/sidebar.css');
