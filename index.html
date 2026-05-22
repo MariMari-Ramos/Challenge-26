@@ -6,6 +6,8 @@
     <title>Pagina Inicial</title>
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Link para o arquivo JavaScript -->
+    <script src="js/main.js" defer></script>
   </head>
   <body class="pagina-inicial">
     <!--Barra lateral de navegação -->
@@ -57,7 +59,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#"class="abrir-config">
             <img src="imagens/settings.png" alt="Configurações" />
             <span class="menu-text">Configurações</span>
           </a>
@@ -146,7 +148,7 @@
     </footer>
 
     <!-- Modal de Configurações -->
-    <div class="modal" id="modal-config">
+    <section class="modal" id="modal-config">
       <div class="modal-content">
         <button class="modal-close">&times;</button>
 
@@ -154,6 +156,6 @@
 
         <p>Aqui vão suas configurações...</p>
       </div>
-    </div>
+    </section>
   </body>
 </html>
