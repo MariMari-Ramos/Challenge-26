@@ -8,3 +8,7 @@
 @import url('./layout/sidebar.css');
 @import url('./layout/header.css'); 
 @import url('./layout/footer.css');
+
+/*Components*/
+@import url('./components/botao.css');
+@import url('./components/hero.css');

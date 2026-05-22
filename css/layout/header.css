@@ -1,10 +1,11 @@
-.botao_topo {
+.header {
     height: 80px;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    gap: var(--spacing-sm);
+    
     padding: 0 var(--spacing-lg);
 
     margin-left: 80px;

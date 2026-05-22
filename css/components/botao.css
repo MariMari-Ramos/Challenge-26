@@ -1,0 +1,38 @@
+/* Base */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    border: none;
+
+    transition: 0.2s;
+}
+
+
+
+.btn-principal {
+    background-color: var(--branco);
+    color: var(--azul1);
+}
+
+.btn-principal:hover {
+    opacity: 0.9;
+}
+
+.btn-secundario {
+    background-color: var(--azul1);
+    color: var(--branco);
+}
+
+.btn-secundario:hover {
+    opacity: 0.9;
+}
+

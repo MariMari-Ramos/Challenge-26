@@ -1,0 +1,30 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    padding: var(--spacing-lg);
+}
+
+.hero .hero-text {
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: var(--spacing-lg);
+    max-width: 900px;
+}
+
+
+.hero img {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    align-items: right;
+    height: 100%;
+    object-fit: cover;
+    }

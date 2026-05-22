@@ -7,7 +7,7 @@
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="pagina-inicial">
     <!--Barra lateral de navegação -->
     <aside class="barra_lateral">
       <div class="barra-lateral-logo">
@@ -67,30 +67,40 @@
 
     <main>
       <!--Cabeçalho com botões de criar conta e entrar -->
-      <header class="botao_topo">
-        <button id="bt-criar-conta">Criar Conta</button>
-        <button id="bt-entrar-conta">Entrar</button>
+      <header class="header">
+        <button class="btn btn-principal" id="btn-criar-conta">
+          Criar Conta
+        </button>
+        <button class="btn btn-secundario" id="btn-entrar-conta">Entrar</button>
       </header>
 
       <!--Texto da pagina e Botão de saiba mais-->
       <section class="hero">
-        <div>
+        <div class="hero-text">
           <h1>Soul Up</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             tristique dolor id tellus iaculis, vitae finibus dolor vulputate.
             Quisque vel aliquam ex. Etiam maximus iaculis vestibulum. Ut id leo
-            justo. Praesent a lorem hendrerit, feugiat nisl non, cursus ex.
+            justo. 
+          </p>
+          <p>  
+            Praesent a lorem hendrerit, feugiat nisl non, cursus ex.
             Vivamus non sollicitudin diam, laoreet placerat ligula. Cras et nunc
             magna. Praesent felis arcu, cursus nec sollicitudin sit amet,
             euismod in lacus. Morbi interdum feugiat neque, sed rhoncus orci
-            congue quis. Nulla pulvinar tincidunt orci, id ultricies turpis.
+            congue quis.
+          </p>
+          <p>
+            Nulla pulvinar tincidunt orci, id ultricies turpis.
             Cras dignissim felis lorem, a consectetur leo tempus vitae. Quisque
             eget luctus metus. Nam ut mauris tincidunt, vulputate eros ac,
             mollis diam.
           </p>
-
-          <button id="bt-saiba-mais">Saiba Mais</button>
+        
+          <button class="btn btn-principal" id="btn-saiba-mais">
+            Saiba Mais
+          </button>
         </div>
         <!--Imagem de fundo-->
         <div>
@@ -134,5 +144,16 @@
         <p>© 2026 - Nome do Projeto | Todos os direitos reservados</p>
       </div>
     </footer>
+
+    <!-- Modal de Configurações -->
+    <div class="modal" id="modal-config">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <h2>Configurações</h2>
+
+        <p>Aqui vão suas configurações...</p>
+      </div>
+    </div>
   </body>
 </html>
