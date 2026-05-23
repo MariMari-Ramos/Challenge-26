@@ -9,9 +9,9 @@
     <!-- Link para o arquivo JavaScript -->
     <script type="module" src="js/main.js" defer></script>
   </head>
-  <body class="dark">
+  <body data-page="home">
     <!--Barra lateral de navegação -->
-    <aside class="barra_lateral">
+    <aside class="barra_lateral" data-page="menu">
       <div class="barra-lateral-logo">
         <a href="index.html" class="logo">
           <img src="imagens/SoulUpLogo.png" alt="Logo da Empresa" />
@@ -22,31 +22,31 @@
           <li>
             <a href="index.html">
               <img src="imagens/home.png" alt="Home" />
-              <span class="menu-text">Home</span>
+              <span class="menu-text" data-i18n="menu.home"></span>
             </a>
           </li>
           <li>
             <a href="paginas/quemsomos.html">
               <img src="imagens/users-alt.png" alt="Quem Somos" />
-              <span class="menu-text">Quem Somos</span>
+              <span class="menu-text" data-i18n="menu.quemSomos"></span>
             </a>
           </li>
           <li>
             <a href="paginas/sobre.html">
               <img src="imagens/circle-i.png" alt="Sobre" />
-              <span class="menu-text">Sobre</span>
+              <span class="menu-text" data-i18n="menu.sobre"></span>
             </a>
           </li>
           <li>
             <a href="paginas/faq.html">
               <img src="imagens/search.png" alt="FAQ" />
-              <span class="menu-text">FAQ</span>
+              <span class="menu-text" data-i18n="menu.faq"></span>
             </a>
           </li>
           <li>
             <a href="paginas/contato.html">
               <img src="imagens/phone-flip.png" alt="Contato" />
-              <span class="menu-text">Contato</span>
+              <span class="menu-text" data-i18n="menu.contato"></span>
             </a>
           </li>
         </ul>
@@ -55,13 +55,13 @@
         <li>
           <a href="#">
             <img src="imagens/circle-user.png" alt="Perfil" />
-            <span class="menu-text">Perfil</span>
+            <span class="menu-text" data-i18n="menu.perfil"></span>
           </a>
         </li>
         <li>
           <button href="#" class="abrir-config">
             <img src="imagens/settings.png" alt="Configurações" />
-            <span class="menu-text">Configurações</span>
+            <span class="menu-text" data-i18n="menu.config"></span>
           </button>
         </li>
       </ul>
@@ -69,38 +69,20 @@
 
     <main>
       <!--Cabeçalho com botões de criar conta e entrar -->
-      <header class="header">
-        <button class="btn btn-principal" id="btn-criar-conta">
-          Criar Conta
-        </button>
-        <button class="btn btn-secundario" id="btn-entrar-conta">Entrar</button>
+      <header class="header" data-page="header">
+        <button class="btn btn-principal" data-i18n="header.criarConta" id="btn-criar-conta"></button>
+        <button class="btn btn-secundario" data-i18n="header.entrar" id="btn-entrar-conta"></button>
       </header>
 
       <!--Texto da pagina e Botão de saiba mais-->
-      <section class="hero">
+      <section class="hero" data-page="hero">
         <div class="hero-text">
-          <h1>Soul Up</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            tristique dolor id tellus iaculis, vitae finibus dolor vulputate.
-            Quisque vel aliquam ex. Etiam maximus iaculis vestibulum. Ut id leo
-            justo.
-          </p>
-          <p>
-            Praesent a lorem hendrerit, feugiat nisl non, cursus ex. Vivamus non
-            sollicitudin diam, laoreet placerat ligula. Cras et nunc magna.
-            Praesent felis arcu, cursus nec sollicitudin sit amet, euismod in
-            lacus. Morbi interdum feugiat neque, sed rhoncus orci congue quis.
-          </p>
-          <p>
-            Nulla pulvinar tincidunt orci, id ultricies turpis. Cras dignissim
-            felis lorem, a consectetur leo tempus vitae. Quisque eget luctus
-            metus. Nam ut mauris tincidunt, vulputate eros ac, mollis diam.
-          </p>
+          <h1 data-i18n="hero.titulo"></h1>
+          <p data-i18n="hero.paragrafo1"></p>
+          <p data-i18n="hero.paragrafo2"></p>
+          <p data-i18n="hero.paragrafo3"></p>
 
-          <button class="btn btn-principal" id="btn-saiba-mais">
-            Saiba Mais
-          </button>
+          <button class="btn btn-principal" id="btn-saiba-mais" data-i18n="hero.botao"></button>
         </div>
         <!--Imagem de fundo-->
         <div>
@@ -112,65 +94,59 @@
       </section>
     </main>
     <!--Rodapé -->
-    <footer class="footer">
+    <footer class="footer" data-page="footer">
       <div class="footer-container">
         <!-- Sobre -->
         <div class="footer-section">
-          <h3>Sobre</h3>
-          <p>Nosso projeto busca ajudar...</p>
+          <h3 data-i18n="footer.sobreTitulo"></h3>
+          <p data-i18n="footer.sobreTexto"></p>
         </div>
 
         <!-- Links -->
         <div class="footer-section">
-          <h3>Links</h3>
+          <h3 data-i18n="footer.linksTitulo"></h3>
           <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html" data-i18n="footer.home"></a></li>
+            <li><a href="sobre.html" data-i18n="footer.sobre"></a></li>
+            <li><a href="faq.html" data-i18n="footer.faq"></a></li>
+            <li><a href="contato.html" data-i18n="footer.contato"></a></li>
           </ul>
         </div>
 
         <!-- Contato -->
         <div class="footer-section">
-          <h3>Contato</h3>
-          <p>Email: contato@email.com</p>
-          <p>Telefone: (11) 99999-9999</p>
+          <h3 data-i18n="footer.contatoTitulo"></h3>
+            <p data-i18n="footer.email"></p>
+            <p data-i18n="footer.telefone"></p>
         </div>
       </div>
 
       <!-- LINHA FINAL -->
       <div class="footer-bottom">
-        <p>© 2026 - Nome do Projeto | Todos os direitos reservados</p>
+        <p data-i18n="footer.direitos"></p>
       </div>
     </footer>
 
     <!-- Modal de Configurações -->
-    <section class="modal" id="modal-config">
+    <section class="modal" id="modal-config" data-page="config">
       <div class="modal-content">
         <button class="modal-close">&times;</button>
 
-        <h2>Configurações</h2>
+        <h2 data-i18n="config.titulo">Configurações</h2>
 
         <div class="config-item">
-          <label>Linguagem</label>
-          <select>
-            <option>Português</option>
-            <option>English</option>
+          <label data-i18n="config.linguagem">Linguagem</label>
+          <select id="lang-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
           </select>
         </div>
         <div class="config-item">
-          <label>Tema</label>
+          <label data-i18n="config.tema">Tema</label>
           <select>
-            <option>Escuro</option>
+            <option">Escuro</option>
             <option>Claro</option>
           </select>
-        </div>
-        <div class="config-item">
-          <label>
-            <input type="checkbox" />
-            Ativar notificações
-          </label>
         </div>
       </div>
     </section>
