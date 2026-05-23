@@ -42,6 +42,17 @@
     height: 30px;
 }
 
+.barra_lateral button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.barra_lateral button img {
+    width: 30px;
+    height: 30px;
+}
+
 
 .barra_lateral span{
     display: none;

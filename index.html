@@ -7,9 +7,9 @@
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- Link para o arquivo JavaScript -->
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
   </head>
-  <body class="pagina-inicial">
+  <body class="dark">
     <!--Barra lateral de navegação -->
     <aside class="barra_lateral">
       <div class="barra-lateral-logo">
@@ -59,10 +59,10 @@
           </a>
         </li>
         <li>
-          <a href="#"class="abrir-config">
+          <button href="#" class="abrir-config">
             <img src="imagens/settings.png" alt="Configurações" />
             <span class="menu-text">Configurações</span>
-          </a>
+          </button>
         </li>
       </ul>
     </aside>
@@ -84,22 +84,20 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             tristique dolor id tellus iaculis, vitae finibus dolor vulputate.
             Quisque vel aliquam ex. Etiam maximus iaculis vestibulum. Ut id leo
-            justo. 
-          </p>
-          <p>  
-            Praesent a lorem hendrerit, feugiat nisl non, cursus ex.
-            Vivamus non sollicitudin diam, laoreet placerat ligula. Cras et nunc
-            magna. Praesent felis arcu, cursus nec sollicitudin sit amet,
-            euismod in lacus. Morbi interdum feugiat neque, sed rhoncus orci
-            congue quis.
+            justo.
           </p>
           <p>
-            Nulla pulvinar tincidunt orci, id ultricies turpis.
-            Cras dignissim felis lorem, a consectetur leo tempus vitae. Quisque
-            eget luctus metus. Nam ut mauris tincidunt, vulputate eros ac,
-            mollis diam.
+            Praesent a lorem hendrerit, feugiat nisl non, cursus ex. Vivamus non
+            sollicitudin diam, laoreet placerat ligula. Cras et nunc magna.
+            Praesent felis arcu, cursus nec sollicitudin sit amet, euismod in
+            lacus. Morbi interdum feugiat neque, sed rhoncus orci congue quis.
           </p>
-        
+          <p>
+            Nulla pulvinar tincidunt orci, id ultricies turpis. Cras dignissim
+            felis lorem, a consectetur leo tempus vitae. Quisque eget luctus
+            metus. Nam ut mauris tincidunt, vulputate eros ac, mollis diam.
+          </p>
+
           <button class="btn btn-principal" id="btn-saiba-mais">
             Saiba Mais
           </button>
@@ -154,7 +152,26 @@
 
         <h2>Configurações</h2>
 
-        <p>Aqui vão suas configurações...</p>
+        <div class="config-item">
+          <label>Linguagem</label>
+          <select>
+            <option>Português</option>
+            <option>English</option>
+          </select>
+        </div>
+        <div class="config-item">
+          <label>Tema</label>
+          <select>
+            <option>Escuro</option>
+            <option>Claro</option>
+          </select>
+        </div>
+        <div class="config-item">
+          <label>
+            <input type="checkbox" />
+            Ativar notificações
+          </label>
+        </div>
       </div>
     </section>
   </body>

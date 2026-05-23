@@ -8,9 +8,26 @@ export function initModal() {
 
     btnAbrir.addEventListener('click', () => {
         modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
     });
 
     btnFechar.addEventListener('click', () => {
         modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    modal.addEventListener('click', (e) => {
+
+    if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    });
+
+    document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
     });
 }

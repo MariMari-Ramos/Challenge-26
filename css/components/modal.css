@@ -15,6 +15,7 @@
 
     opacity: 0;
     visibility: hidden;
+    z-index: 100;
 
     transition: 0.3s;
 }
@@ -27,7 +28,11 @@
 
 /* Conteúdo da Modal */
 .modal-content {
-    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background: var(--cinza);
     padding: 20px;
     border-radius: 10px;
 
@@ -35,11 +40,18 @@
     position: relative;
 }
 
+.config-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 /* Botão de Fechar */
 .modal-close {
     position: absolute;
     top: 10px;
     right: 10px;
+    color: var(--cinza2);
 
     background: none;
     font-size: 20px;
