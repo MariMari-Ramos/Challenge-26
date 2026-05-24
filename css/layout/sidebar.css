@@ -73,3 +73,7 @@
     visibility: visible;
     transform: translateX(0);
 }
+
+.toggle-sidebar {
+    display: none;
+}

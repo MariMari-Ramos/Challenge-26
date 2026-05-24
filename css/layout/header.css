@@ -9,4 +9,5 @@
     padding: 0 var(--spacing-lg);
 
     margin-left: 80px;
+    background: rgba(0, 0, 0, 0.3);
 }
