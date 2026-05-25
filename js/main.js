@@ -1,12 +1,9 @@
 import { initModal } from './components/modal.js';
+import { initI18n } from './i18n/i18n.js';
+import { initFaq } from './components/faq.js';
+import { initContato } from './components/contato.js';
 
 initModal();
-
-import { initI18n } from './i18n/i18n.js';
-
 initI18n();
-
-import { initSidebar } from './layout/sidebar.js';
-
-initSidebar();
-
+initFaq();
+initContato();
