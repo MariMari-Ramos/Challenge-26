@@ -11,6 +11,7 @@
     padding: var(--spacing-lg);
 }
 
+/*Texto do hero*/
 .hero .hero-text {
     z-index: 2;
     position: absolute;
@@ -20,7 +21,7 @@
     max-width: 900px;
 }
 
-
+/*imagem do hero*/
 .hero img {
     position: relative;
     bottom: 0;
@@ -30,6 +31,7 @@
     object-fit: cover;
 }
 
+/*overlay do hero*/
 .hero::before {
     content: "";
     position: absolute;

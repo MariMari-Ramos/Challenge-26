@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Inicial</title>
-    <!-- Link para o arquivo CSS -->
+    <!-- Título da página -->
+    <title>SoulPass | Mobilidade Urbana Sustentável</title>
+    <!-- Arquivos principais -->
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Link para o arquivo JavaScript -->
     <script type="module" src="js/main.js" defer></script>
   </head>
+
   <body data-page="home">
+    <!-- Botão do menu mobile e tablet-->
     <button class="toggle-sidebar">
       <img src="imagens/menu-burger.png" alt="Abrir menu" />
     </button>
-    <!--Barra lateral de navegação -->
+    <!-- Menu lateral -->
     <aside class="barra_lateral" data-page="menu">
       <div class="barra-lateral-logo">
         <a href="index.html" class="logo">
           <img src="imagens/SoulUpLogo.png" alt="Logo da Empresa" />
         </a>
       </div>
+      <!-- Navegação principal -->
       <nav class="barra-lateral-menu">
         <ul>
           <li>
@@ -54,6 +57,8 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Área inferior da sidebar -->
       <ul class="barra-lateral-rodape">
         <li>
           <a href="#">
@@ -62,7 +67,7 @@
           </a>
         </li>
         <li>
-          <button href="#" class="abrir-config">
+          <button class="abrir-config">
             <img src="imagens/settings.png" alt="Configurações" />
             <span class="menu-text" data-i18n="menu.config"></span>
           </button>
@@ -71,13 +76,21 @@
     </aside>
 
     <main>
-      <!--Cabeçalho com botões de criar conta e entrar -->
+      <!--Cabeçalho-->
       <header class="header" data-page="header">
-        <button class="btn btn-principal" data-i18n="header.criarConta" id="btn-criar-conta"></button>
-        <button class="btn btn-secundario" data-i18n="header.entrar" id="btn-entrar-conta"></button>
+        <button 
+          class="btn btn-principal" 
+          data-i18n="header.criarConta" 
+          id="btn-criar-conta">
+        </button>
+        <button 
+          class="btn btn-secundario" 
+          data-i18n="header.entrar" 
+          id="btn-entrar-conta">
+      </button>
       </header>
 
-      <!--Texto da pagina e Botão de saiba mais-->
+      <!--Seção principal-->
       <section class="hero" data-page="hero">
         <div class="hero-text">
           <h1 data-i18n="hero.titulo"></h1>
@@ -85,8 +98,13 @@
           <p data-i18n="hero.paragrafo2"></p>
           <p data-i18n="hero.paragrafo3"></p>
 
-          <button class="btn btn-principal" id="btn-saiba-mais" data-i18n="hero.botao"></button>
+          <button
+            class="btn btn-principal"
+            id="btn-saiba-mais"
+            data-i18n="hero.botao">
+          </button>
         </div>
+
         <!--Imagem de fundo-->
         <div>
           <img
@@ -101,7 +119,7 @@
       <div class="footer-container">
         <!-- Sobre -->
         <div class="footer-section">
-          <h3 data-i18n="footer.sobreTitulo"></h3>
+          <h3  data-i18n="footer.sobreTitulo"></h3>
           <p data-i18n="footer.sobreTexto"></p>
         </div>
 
@@ -110,9 +128,9 @@
           <h3 data-i18n="footer.linksTitulo"></h3>
           <ul>
             <li><a href="index.html" data-i18n="footer.home"></a></li>
-            <li><a href="sobre.html" data-i18n="footer.sobre"></a></li>
-            <li><a href="faq.html" data-i18n="footer.faq"></a></li>
-            <li><a href="contato.html" data-i18n="footer.contato"></a></li>
+            <li><a href="paginas/sobre.html" data-i18n="footer.sobre"></a></li>
+            <li><a href="paginas/faq.html" data-i18n="footer.faq"></a></li>
+            <li><a href="paginas/contato.html" data-i18n="footer.contato"></a></li>
           </ul>
         </div>
 
@@ -144,13 +162,7 @@
             <option value="en">English</option>
           </select>
         </div>
-        <div class="config-item">
-          <label data-i18n="config.tema">Tema</label>
-          <select>
-            <option">Escuro</option>
-            <option>Claro</option>
-          </select>
-        </div>
+        
       </div>
     </section>
   </body>
