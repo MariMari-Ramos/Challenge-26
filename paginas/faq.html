@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - SoulPass</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/paginas/faq.css" />
+    <script type="module" src="../js/main.js" defer></script>
+  </head>
+  <body data-page="faq">
+    <!-- Barra lateral -->
+    <aside class="barra_lateral" data-page="menu">
+      <div class="barra-lateral-logo">
+        <a href="../index.html" class="logo">
+          <img src="../imagens/SoulUpLogo.png" alt="Logo da Empresa" />
+        </a>
+      </div>
+      <nav class="barra-lateral-menu">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <img src="../imagens/home.png" alt="Home" />
+              <span class="menu-text" data-i18n="menu.home"></span>
+            </a>
+          </li>
+          <li>
+            <a href="quemsomos.html">
+              <img src="../imagens/users-alt.png" alt="Quem Somos" />
+              <span class="menu-text" data-i18n="menu.quemSomos"></span>
+            </a>
+          </li>
+          <li>
+            <a href="sobre.html">
+              <img src="../imagens/circle-i.png" alt="Sobre" />
+              <span class="menu-text" data-i18n="menu.sobre"></span>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html">
+              <img src="../imagens/search.png" alt="FAQ" />
+              <span class="menu-text" data-i18n="menu.faq"></span>
+            </a>
+          </li>
+          <li>
+            <a href="contato.html">
+              <img src="../imagens/phone-flip.png" alt="Contato" />
+              <span class="menu-text" data-i18n="menu.contato"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="barra-lateral-rodape">
+        <li>
+          <a href="#">
+            <img src="../imagens/circle-user.png" alt="Perfil" />
+            <span class="menu-text" data-i18n="menu.perfil"></span>
+          </a>
+        </li>
+        <li>
+          <button class="abrir-config">
+            <img src="../imagens/settings.png" alt="Configurações" />
+            <span class="menu-text" data-i18n="menu.config"></span>
+          </button>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- Cabecalho -->
+      <header class="header" data-page="header">
+        <button class="btn btn-principal" data-i18n="header.criarConta"></button>
+        <button class="btn btn-secundario" data-i18n="header.entrar"></button>
+      </header>
+
+      <!-- Perguntas frequentes -->
+      <section class="faq">
+        <h1 data-i18n="faq.titulo"></h1>
+        <p class="faq-intro" data-i18n="faq.intro"></p>
+
+        <!-- Lista de perguntas (cada item abre e fecha no clique) -->
+        <div class="faq-lista">
+          <div class="faq-item">
+            <button class="faq-pergunta">
+              <span data-i18n="faq.pergunta1"></span>
+              <span class="faq-icone">+</span>
+            </button>
+            <div class="faq-resposta">
+              <p data-i18n="faq.resposta1"></p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-pergunta">
+              <span data-i18n="faq.pergunta2"></span>
+              <span class="faq-icone">+</span>
+            </button>
+            <div class="faq-resposta">
+              <p data-i18n="faq.resposta2"></p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-pergunta">
+              <span data-i18n="faq.pergunta3"></span>
+              <span class="faq-icone">+</span>
+            </button>
+            <div class="faq-resposta">
+              <p data-i18n="faq.resposta3"></p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-pergunta">
+              <span data-i18n="faq.pergunta4"></span>
+              <span class="faq-icone">+</span>
+            </button>
+            <div class="faq-resposta">
+              <p data-i18n="faq.resposta4"></p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-pergunta">
+              <span data-i18n="faq.pergunta5"></span>
+              <span class="faq-icone">+</span>
+            </button>
+            <div class="faq-resposta">
+              <p data-i18n="faq.resposta5"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer" data-page="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 data-i18n="footer.sobreTitulo"></h3>
+          <p data-i18n="footer.sobreTexto"></p>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.linksTitulo"></h3>
+          <ul>
+            <li><a href="../index.html" data-i18n="footer.home"></a></li>
+            <li><a href="sobre.html" data-i18n="footer.sobre"></a></li>
+            <li><a href="faq.html" data-i18n="footer.faq"></a></li>
+            <li><a href="contato.html" data-i18n="footer.contato"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.contatoTitulo"></h3>
+          <p data-i18n="footer.email"></p>
+          <p data-i18n="footer.telefone"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.direitos"></p>
+      </div>
+    </footer>
+
+    <!-- Modal de configuracoes -->
+    <section class="modal" id="modal-config" data-page="config">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h2 data-i18n="config.titulo"></h2>
+        <div class="config-item">
+          <label data-i18n="config.linguagem"></label>
+          <select id="lang-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <div class="config-item">
+          <label data-i18n="config.tema"></label>
+          <select>
+            <option>Escuro</option>
+            <option>Claro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
