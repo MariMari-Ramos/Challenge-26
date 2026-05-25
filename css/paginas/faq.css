@@ -1,0 +1,72 @@
+/* Pagina FAQ */
+.faq {
+    margin-left: 80px;
+    padding: var(--spacing-lg);
+    max-width: 900px;
+    min-height: calc(100vh - 80px);
+}
+
+.faq h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.faq-intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Lista de perguntas */
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+/* Cada item do accordion */
+.faq-item {
+    background-color: var(--cinza);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.faq-pergunta {
+    width: 100%;
+    background: transparent;
+    color: var(--branco);
+    padding: var(--spacing-md);
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Icone de mais (vira X quando aberto) */
+.faq-icone {
+    font-size: 24px;
+    color: var(--azul3);
+    transition: 0.3s;
+}
+
+/* Resposta fica escondida ate o item ficar ativo */
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 var(--spacing-md);
+}
+
+.faq-resposta p {
+    font-size: 16px;
+    padding-bottom: var(--spacing-md);
+}
+
+/* Estado aberto */
+.faq-item.ativo .faq-resposta {
+    max-height: 500px;
+}
+
+.faq-item.ativo .faq-icone {
+    transform: rotate(45deg);
+}
