@@ -1,0 +1,103 @@
+/* Pagina Como Funciona */
+.solucao2 {
+    margin-left: 80px;
+    padding: var(--spacing-lg);
+    max-width: 1000px;
+    min-height: calc(100vh - 80px);
+}
+
+.solucao2 h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.solucao2-intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Grid dos passos */
+.passos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Cada passo */
+.passo {
+    background-color: var(--cinza);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+/* Numero do passo (circulo azul) */
+.passo-numero {
+    width: 40px;
+    height: 40px;
+    background-color: var(--azul3);
+    color: var(--cinza);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.passo h3 {
+    color: var(--azul3);
+    margin-bottom: var(--spacing-xs);
+    font-size: 20px;
+}
+
+.passo p {
+    font-size: 16px;
+}
+
+/* Bloco de beneficios */
+.beneficios {
+    background-color: var(--cinza);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-lg);
+}
+
+.beneficios h2 {
+    color: var(--azul3);
+    margin-bottom: var(--spacing-md);
+}
+
+.beneficios-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+/* Item da lista com check */
+.beneficios-lista li {
+    font-size: 18px;
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.beneficios-lista li::before {
+    content: '✓';
+    color: var(--azul3);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.solucao2-voltar {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .passos {
+        grid-template-columns: 1fr;
+    }
+}
