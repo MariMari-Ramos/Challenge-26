@@ -35,13 +35,22 @@ function aplicarIdioma(lang) {
         const chave = el.getAttribute('data-i18n');
 
         const partes = chave.split('.'); 
-        // ex: "menu.home" → ["menu", "home"]
 
+        // Tenta buscar no dicionario da pagina primeiro
         let texto = idiomas[lang]?.[pagina];
 
         partes.forEach(p => {
             texto = texto?.[p];
         });
+
+        // Se nao encontrou, tenta remover o prefixo da pagina
+        // (caso o HTML use "contato.titulo" e o JSON tenha "titulo" direto)
+        if (!texto && partes[0] === pagina) {
+            texto = idiomas[lang]?.[pagina];
+            partes.slice(1).forEach(p => {
+                texto = texto?.[p];
+            });
+        }
 
         if (texto) {
             el.textContent = texto;
