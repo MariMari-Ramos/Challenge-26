@@ -1,0 +1,28 @@
+/* Pagina Sobre */
+.sobre {
+    margin-left: 80px;
+    padding: var(--spacing-lg);
+    max-width: 900px;
+    min-height: calc(100vh - 80px);
+}
+ 
+.sobre h1 {
+    margin-bottom: var(--spacing-md);
+}
+ 
+.sobre p {
+    margin-bottom: var(--spacing-md);
+}
+ 
+/* Botoes para as paginas da solucao */
+.sobre-botoes {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+ 
+.sobre-botoes .btn {
+    text-decoration: none;
+    display: inline-block;
+}
