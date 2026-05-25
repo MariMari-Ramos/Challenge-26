@@ -9,6 +9,7 @@
     <script type="module" src="../js/main.js" defer></script>
   </head>
   <body data-page="solucao">
+    <!-- Barra lateral -->
     <aside class="barra_lateral" data-page="menu">
       <div class="barra-lateral-logo">
         <a href="../index.html" class="logo">
@@ -66,26 +67,31 @@
     </aside>
 
     <main>
+      <!-- Cabecalho -->
       <header class="header" data-page="header">
         <button class="btn btn-principal" data-i18n="header.criarConta"></button>
         <button class="btn btn-secundario" data-i18n="header.entrar"></button>
       </header>
 
+      <!-- Problema + proposta + diferenciais -->
       <section class="solucao">
         <h1 data-i18n="solucao.titulo"></h1>
 
+        <!-- Bloco do problema -->
         <div class="solucao-bloco">
           <h2 data-i18n="solucao.problemaTitulo"></h2>
           <p data-i18n="solucao.problemaTexto1"></p>
           <p data-i18n="solucao.problemaTexto2"></p>
         </div>
 
+        <!-- Bloco da proposta -->
         <div class="solucao-bloco">
           <h2 data-i18n="solucao.propostaTitulo"></h2>
           <p data-i18n="solucao.propostaTexto1"></p>
           <p data-i18n="solucao.propostaTexto2"></p>
         </div>
 
+        <!-- Cards dos pilares: sustentabilidade, tecnologia, mobilidade -->
         <div class="solucao-cards">
           <div class="solucao-card">
             <img src="../imagens/circle-i.png" alt="Ícone" />
@@ -104,10 +110,12 @@
           </div>
         </div>
 
+        <!-- Link para a proxima pagina -->
         <a href="solucao2.html" class="btn btn-principal solucao-proximo" data-i18n="solucao.proximo"></a>
       </section>
     </main>
 
+    <!-- Rodape -->
     <footer class="footer" data-page="footer">
       <div class="footer-container">
         <div class="footer-section">
@@ -134,7 +142,7 @@
       </div>
     </footer>
 
-
+    <!-- Modal de configuracoes -->
     <section class="modal" id="modal-config" data-page="config">
       <div class="modal-content">
         <button class="modal-close">&times;</button>
