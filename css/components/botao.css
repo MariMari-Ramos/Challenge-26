@@ -16,8 +16,7 @@
     transition: 0.2s;
 }
 
-
-
+/*Botão Principal*/
 .btn-principal {
     background-color: var(--branco);
     color: var(--azul1);
@@ -27,6 +26,7 @@
     opacity: 0.9;
 }
 
+/*Botão Secundário*/
 .btn-secundario {
     background-color: var(--azul1);
     color: var(--branco);

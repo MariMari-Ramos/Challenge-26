@@ -1,9 +1,6 @@
-/* =========================
-   📱 MOBILE (até 480px)
-========================= */
+/* MOBILE*/
 @media (max-width: 480px) {
-
-    /* 🔹 SIDEBAR */
+    /* Sidebar */
     .barra_lateral {
         transform: translateX(-100%);
         width: 200px;
@@ -20,7 +17,7 @@
         visibility: visible;
     }
 
-    /* 🔹 BOTÃO SIDEBAR */
+    /* Botão Sidebar */
     .toggle-sidebar {
         display: block;
         position: fixed;
@@ -35,7 +32,7 @@
         height: 18px;
     }
 
-    /* 🔹 HEADER */
+    /* Header */
     .header {
         margin-left: 0;
         flex-direction: row;
@@ -43,35 +40,35 @@
         gap: 10px;
     }
 
-    /* 🔹 HERO */
+    /* Hero */
     .hero {
         display: flex;
         flex-direction: column;
-        align-items: stretch; 
+        align-items: stretch;
         justify-content: center;
-        text-align:justify;
+        text-align: justify;
         padding: 20px;
         height: auto;
     }
 
+    /* Textos da hero*/
     .hero .hero-text {
         position: relative;
         max-width: 99%;
         padding: 0;
         left: 0;
-
     }
-
+    /* Imagem da hero */
     .hero img {
-        display: none; /* 🔥 remove no mobile */
+        display: none;
     }
 
-    /* 🔹 BOTÕES */
+    /* Botões */
     .btn {
         width: auto;
     }
 
-    /* 🔹 FOOTER */
+    /* Footer */
     .footer {
         margin-left: 0;
     }
@@ -86,13 +83,13 @@
         max-width: 100%;
     }
 
-    /* 🔹 MODAL */
+    /* Modal */
     .modal {
         width: 100%;
         z-index: 40000;
     }
 
-    /* 🔹 TIPOGRAFIA */
+    /* Tipografia */
     h1 {
         font-size: 24px;
     }
@@ -106,13 +103,9 @@
     }
 }
 
-
-/* =========================
-   📲 TABLET (481px até 991px)
-========================= */
+/* TABLET*/
 @media (min-width: 481px) and (max-width: 991px) {
-
-    /* 🔹 SIDEBAR */
+    /* Sidebar */
     .barra_lateral {
         transform: translateX(-100%);
         width: 200px;
@@ -129,7 +122,7 @@
         visibility: visible;
     }
 
-    /* 🔹 BOTÃO SIDEBAR */
+    /* Botão Sidebar */
     .toggle-sidebar {
         display: block;
         position: fixed;
@@ -144,31 +137,31 @@
         height: 20px;
     }
 
-    /* 🔹 HEADER */
+    /* Header */
     .header {
         margin-left: 0;
         justify-content: flex-end;
     }
 
-    /* 🔹 FOOTER */
+    /* Footer */
     .footer {
         margin-left: 0;
     }
 
-    /* 🔹 MODAL */
+    /* Modal */
     .modal {
         width: 100%;
         z-index: 40000;
     }
 
-    /* 🔹 HERO */
+    /* Hero */
     .hero {
         position: relative;
         height: 100vh; /* 🔥 ocupa tela toda */
         overflow: hidden;
     }
 
-    /* 🔥 IMAGEM COMO FUNDO */
+    /* Imagem de fundo */
     .hero img {
         position: absolute;
         bottom: 0;
@@ -181,11 +174,10 @@
         z-index: 1;
     }
 
-    /* 🔥 TEXTO POR CIMA */
+    /* Texto da hero*/
     .hero .hero-text {
         position: relative;
         z-index: 3;
-
 
         max-width: 80%;
         left: 1%;
@@ -193,15 +185,15 @@
     }
 
     .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
+        content: "";
+        position: absolute;
+        inset: 0;
 
-    background: rgba(0, 0, 0, 0.3); /* controla intensidade */
-    z-index: 2;
-}
+        background: rgba(0, 0, 0, 0.3); /* controla intensidade */
+        z-index: 2;
+    }
 
-    /* 🔹 TIPOGRAFIA */
+    /* Tipografia */
     h1 {
         font-size: 28px;
     }
@@ -210,4 +202,3 @@
         font-size: 18px;
     }
 }
-
